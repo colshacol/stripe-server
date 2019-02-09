@@ -1,0 +1,37 @@
+{
+  "name": "ssns",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "babel-watch src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "server": "^1.0.18",
+    "stripe": "^6.23.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "11"
+          }
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0",
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.10",
+    "babel-watch": "^7.0.0"
+  }
+}
