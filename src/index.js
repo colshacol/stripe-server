@@ -2,9 +2,12 @@ import './setup'
 import server from 'server'
 import { get, post } from 'server/router'
 import { render, json } from 'server/reply'
+import timeStamp from 'time-stamp'
 
 import getProducts from './services/getProducts'
 
-server([get('/getProducts', getProducts)])
+server([get('/listProducts', getProducts)])
 
-console.log('stripe-server: http://localhost:3000')
+console.log(
+  `[${timeStamp('MM/DD/YYYY @ HH:mm:ss')}] LISTENING http://localhost:3000`
+)

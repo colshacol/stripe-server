@@ -1,3 +1,3 @@
-# stripe-server
+# stripe-services
 
-Stripe's APIs can't be used in the browser. This project aims to provide pre-set-up RESTful routes for most Stripe methods... and stuff.
+Stripe's APIs can't be used in the browser. This project is a distributable server with the intent of cloning the Stripe API as endpoints.

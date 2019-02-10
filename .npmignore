@@ -1,0 +1,6 @@
+.src
+.env
+.gitignore
+.prettierrc
+now.json
+yarn.lock
