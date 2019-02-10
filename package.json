@@ -3,7 +3,9 @@
   "version": "0.0.01",
   "description": "",
   "scripts": {
-    "start": "babel-watch src"
+    "start": "babel-watch src",
+    "build": "babel ./src --out-dir ./dist --source-maps",
+    "deploy": "now alias $(now -e STRIPE_API_KEY=@stripe_api_key) stripe-services.now.sh"
   },
   "keywords": [],
   "author": "",

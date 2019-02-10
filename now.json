@@ -1,9 +1,17 @@
 {
   "version": 2,
+  "name": "stripe-services",
+  "alias": "stripe-services.now.sh",
   "builds": [
     {
-      "src": "test.js",
-      "use": "@now/node"
+      "src": "./src/index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/index.js"
     }
   ]
 }

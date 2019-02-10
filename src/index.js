@@ -1,4 +1,3 @@
-import './setup'
 import server from 'server'
 import { get, post } from 'server/router'
 import { render, json } from 'server/reply'
