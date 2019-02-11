@@ -1,17 +1,8 @@
 {
-  "version": 2,
+  "version": 1,
   "name": "stripe-services",
   "alias": "stripe-services.now.sh",
-  "builds": [
-    {
-      "src": "./src/index.js",
-      "use": "@now/node-server"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/src/index.js"
-    }
-  ]
+  "env": {
+    "STRIPE_API_KEY": "@stripe_api_key"
+  }
 }
